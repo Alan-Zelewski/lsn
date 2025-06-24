@@ -7,10 +7,12 @@ public class Task3 {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try{
+            System.out.println("Insert number of pairs:");
             int n = Integer.parseInt(reader.readLine());
             Map<Integer, List<Integer>> graph = new HashMap<>();
             Set<Integer> nodes = new HashSet<>();
 
+            System.out.println("Insert pairs of nodes line by line:");
             for(int i = 0; i < n; i++){
                 String[] inputArray = reader.readLine().trim().split("\\s+");
                 int a = Integer.parseInt(inputArray[0]);
