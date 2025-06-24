@@ -7,6 +7,7 @@ public class Task2 {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
+            System.out.println("Insert input numbers in line:");
             String inputString = reader.readLine();
             if(inputString == null || inputString.trim().isEmpty()) {
                 System.out.println("Empty input");
